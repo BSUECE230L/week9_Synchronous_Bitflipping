@@ -1,4 +1,4 @@
-module demux_(
+module demux(
     input [7:0] data_in,    // 8-bit input data
     input [1:0] sel,        // 2-bit select input to choose which latch to write
     input store,            // Store command (btnC) - Enable signal for latches
