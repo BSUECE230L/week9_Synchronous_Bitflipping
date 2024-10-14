@@ -1,15 +1,15 @@
 module behavioral_d_latch(
-    input Set,
-    input Reset,
+    input D,
+    input E,
     output reg Q,
     output NotQ
 );
 
-    always @(Set, Reset) begin 
-        if (Set)
-            Q = 1;
-        else if (Reset)
-            Q = 0;
+    always @(E) begin 
+        if (E)
+            Q = D;
+        else if (~E)
+            Q = Q;
     end
     assign NotQ = ~Q; 
 
