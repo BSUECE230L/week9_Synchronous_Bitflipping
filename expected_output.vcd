@@ -1,0 +1,61 @@
+$date
+	Sat Oct 12 21:27:16 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module test $end
+$var wire 1 ! Q $end
+$var wire 1 " NotQ $end
+$var reg 1 # D $end
+$var reg 1 $ E $end
+$scope module uut $end
+$var wire 1 $ btnC $end
+$var wire 1 % sw $end
+$var wire 2 & led [1:0] $end
+$scope module mem $end
+$var wire 1 % D $end
+$var wire 1 $ E $end
+$var wire 1 ' NotQ $end
+$var reg 1 ( Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+1'
+b10 &
+0%
+0$
+0#
+1"
+0!
+$end
+#10000
+1$
+#11000
+0$
+#13000
+1%
+1#
+#15000
+0"
+0'
+1!
+b1 &
+1(
+1$
+#16000
+0$
+#18000
+0%
+0#
+#20000
