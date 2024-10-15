@@ -16,8 +16,8 @@ module memory_system(
             case(addr)
                 2'b00: byte0 <= data;
                 2'b01: byte1 <= data;
-                2'b02: byte2 <= data;
-                2'b03: byte3 <= data;
+                2'b10: byte2 <= data;
+                2'b11: byte3 <= data;
             endcase
         end
     end
