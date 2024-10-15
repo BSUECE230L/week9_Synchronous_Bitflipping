@@ -11,7 +11,7 @@ module byte_memory(
     if(store)
       memory <= data;
     else if(~store)
-      memory = memory;
+      memory <= memory;
   end
 
     // Memory should always output the value
