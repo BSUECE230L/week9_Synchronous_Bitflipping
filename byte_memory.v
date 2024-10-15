@@ -9,7 +9,7 @@ module byte_memory(
     // when store is high
   always @(store) begin
     if(store)
-      memory = data;
+      memory <= data;
     else if(~store)
       memory = memory;
   end
