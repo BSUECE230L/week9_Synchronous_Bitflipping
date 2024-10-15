@@ -1,9 +1,7 @@
 module top(
-  input [0:0] sw, 
-  input [15:6] sw,
+  input [15:0] sw,
   input btnC,
-  output [1:0] led,
-  output [15:8] led
+  output [15:0] led
 );
 
   behavioral_d_latch partOne(
