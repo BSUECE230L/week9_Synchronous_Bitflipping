@@ -14,10 +14,10 @@ module memory_system(
     always @(*) begin
         if (store) begin
             case(addr)
-                2'b00: byte0 = data;
-                2'b01: byte1 = data;
-                2'b02: byte2 = data;
-                2'b03: byte3 = data;
+                2'b00: byte0 >= data;
+                2'b01: byte1 >= data;
+                2'b02: byte2 >= data;
+                2'b03: byte3 >= data;
             endcase
         end
     end
