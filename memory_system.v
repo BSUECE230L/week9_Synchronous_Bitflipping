@@ -26,7 +26,7 @@ module memory_system(
     // memory specified by addr into the memory
     // output for display on the LEDs
 
-    assign memory <= addr;
+    assign memory = addr;
 
     
   // byte_memory bit0(
