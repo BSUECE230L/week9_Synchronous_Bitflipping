@@ -7,9 +7,9 @@ module behavioral_d_latch(
 
     always @(E) begin 
         if (E)
-            Q = D;
+            Q <= D;
         else if (~E)
-            Q = Q;
+            Q <= Q;
     end
     assign NotQ = ~Q; 
 
